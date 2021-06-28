@@ -1,0 +1,6 @@
+name: Service Example
+description: "This module create one service rest"
+package: dojo
+
+type: modle
+core_version_requirement: ^8.8.0 || ^9.0
