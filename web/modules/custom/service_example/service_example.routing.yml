@@ -1,0 +1,6 @@
+service_example.saludopage:
+  path: '/test-page'
+  defaults:
+    _controller: '\Drupal\service_example\Controller\ServiceExampleController::content'
+  requirements:
+    _permission: 'access content'
