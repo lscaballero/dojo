@@ -1,6 +1,6 @@
 name: Service Example
-description: "This module create one service rest"
+description: "This module create one service personalized and injection "
 package: dojo
 
-type: modle
+type: module
 core_version_requirement: ^8.8.0 || ^9.0

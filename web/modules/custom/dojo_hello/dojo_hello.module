@@ -1,0 +1,7 @@
+<?php
+
+/**
+ * @file
+ * Module file for Dojo Hello
+ * This module create a static page whit a welcome message
+ */

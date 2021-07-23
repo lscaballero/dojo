@@ -1,2 +1,21 @@
-#vendor
-./vendor
+#Files and dependendencies Drupal
+./vendor/*
+./web/sites/default/files/*
+./web/sites/default/*
+# Ignore configuration files that may contain sensitive information.
+.htaccess
+sites/*/settings*.php
+sites/default/settings.php
+#sites/*/services*.yml
+#maccevedor cambios para desabilitar cache
+sites/default/services.yml
+sites/settings.local.php
+sites/development.services.yml
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+#ignore custom
+vendor
+sites

@@ -1,0 +1,7 @@
+dojo_hello.hello:
+  path: 'dojo/hello'
+  defaults:
+    _controller: '\Drupal\dojo_hello\Controller\DojoHelloController::hello'
+    _title: 'Hello Page'
+  requirements:
+    _permission: 'access content'

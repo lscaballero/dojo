@@ -1,0 +1,13 @@
+name: Dojo Hello
+description: 'Dysplay a basic page'
+package: Dojo
+#
+type: module
+core_version_requirement: ^8.8.0 || ^9.0
+version: 1.0
+#
+dependencies:
+  - node
+  - serialization
+#
+configure: dojo_hello.admin
