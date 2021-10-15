@@ -1,0 +1,105 @@
+dojo_pages.simple:
+  path: '/pages/simple'
+  defaults:
+    _title: 'Dojo Pages'
+    _controller: '\Drupal\dojo_pages\Controller\DojoPagesController::simple'
+  requirements:
+    _permission: 'access content'
+
+dojo_pages.calculator:
+  path: '/dojo/pages/calculator/{num1}/{num2}'
+  defaults:
+    _controller: '\Drupal\dojo_pages\Controller\DojoPagesController::calculator'
+    num1: 10
+    num2: 20
+  requirements:
+    _permission: 'access calculator'
+
+#entidades como parametros
+dojo_pages.user:
+  path: '/dojo/pages/user/{user}'
+  defaults:
+    _controller: '\Drupal\dojo_pages\Controller\DojoPagesController::user'
+  requierents:
+    _permission: 'access content'
+
+#links
+dojo_pages.links:
+  path: '/dojo/pages/links'
+  defaults:
+    _controller: '\Drupal\dojo_pages\Controller\DojoPagesController::links'
+  requirements:
+    _permission: 'access content'
+
+#menus
+dojo_pages.admin_dojo:
+  path: 'admin/dojo'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    title: 'Dojo'
+  requirements:
+    _access: 'TRUE'
+
+dojo_pages.admin_dojo_pages:
+  path: '/admin/dojo/dojo_pages'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    title: 'Dojo Pages'
+  requirements:
+    _access: 'TRUE'
+
+#Tabs
+dojo_pages.tab1:
+  path: '/dojo/pages/tabs/tab1'
+  defaults:
+    _controller:
+      '\Drupal\dojo_pages\Controller\DojoPagesController::tab1'
+  requirements:
+    _permission: 'access content'
+
+dojo_pages.tab2:
+  path: '/dojo/pages/tabs/tab2'
+  defaults:
+    _controller:
+      '\Drupal\dojo_pages\Controller\DojoPagesController::tab2'
+  requirements:
+    _permission: 'access tab2 page'
+
+dojo_pages.tab3:
+  path: '/dojo/pages/tabs/tab3'
+  defaults:
+    _controller:
+      '\Drupal\dojo_pages\Controller\DojoPagesController::tab3'
+  requirements:
+    _permission: 'access content'
+#subTabs
+dojo_pages.tab3a:
+  path: '/dojo/pages/tabs/tab3a'
+  defaults:
+    _controller: '\Drupal\dojo_pages\Controller\DojoPagesController::tab3a'
+  requirements:
+    _permission: 'access content'
+
+dojo_pages.tab3b:
+  path: '/dojo/pages/tabs/tab3b'
+  defaults:
+    _controller: '\Drupal\dojo_pages\Controller\DojoPagesController::tab3b'
+  requirements:
+    _permission: 'access content'
+
+#extra tab con permisos abiertos
+dojo_pages.extratab:
+  path: '/dojo/pages/tabs/extratab'
+  defaults:
+    _controller: '\Drupal\dojo_pages\Controller\DojoPagesController::extratab'
+  requirements:
+    _access: 'TRUE'
+
+#enlaces de accion con permisos de rol
+dojo_pages.action1:
+  path: '/dojo/pages/action1'
+  defaults:
+    _controller: '\Drupal\dojo_pages\Controller\DojoPagesController::action1'
+  requirements:
+    _role: 'gestor'
+

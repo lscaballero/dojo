@@ -1,0 +1,76 @@
+dojo_pages.admim_dojo:
+  title: 'Dojo'
+  parent: system.admin
+  route_name: dojo_pages.admin_dojo
+  description: 'Links to pages created during this dojo'
+  weight: 10
+
+dojo_pages.admin_dojo_pages:
+  title: 'Dojo Pages'
+  parent: dojo_pages.admim_dojo
+  route_name: dojo_pages.admin_dojo_pages
+  description: 'Activities from Dojo Pages module'
+
+#enlaces sin argumentos
+dojo_pages.simple:
+  title: 'Simple Page'
+  description: 'Simple page'
+  route_name: dojo_pages.simple
+  parent: dojo_pages.admin_dojo_pages
+  weight: 1
+
+dojo_pages.links:
+  title: 'Links'
+  description: 'Links'
+  route_name: dojo_pages.links
+  parent: dojo_pages.admin_dojo_pages
+  weight: 2
+
+#Enlaces con argumentos
+dojo_pages.calculator:
+  title: 'Calculator'
+  description: 'Calculator'
+  route_name: dojo_pages.calculator
+  route_parameters:
+    num1: 10
+    num2: 20
+  parent: dojo_pages.admin_dojo_pages
+  weight: 3
+
+dojo_pages.user:
+  title: 'User Page'
+  description: 'User Page'
+  route_name: dojo_pages.user
+  route_parameters:
+    user: 1
+  parent: dojo_pages.admin_dojo_pages
+  weight: 4
+
+#subpestañas
+dojo_pages.tab3a:
+  route_name: dojo_pages.tab3
+  title: Tab 3a
+  parent_id: dojo_pages.tab3
+  weight: 10
+
+dojo_pages.tab3b:
+  route_name: dojo_pages.tab3b
+  title: Tab 3b
+  parent_id: dojo_pages.tab3
+  weight: 20
+
+#pestaña como elemento de menu
+dojo_pages.tabs:
+  title: 'Tabs'
+  description: 'Tabs'
+  route_name: dojo_pages.tab1
+  parent: dojo_pages.admin_dojo_pages
+  weight: 5
+
+#extratab como elemento de menu
+dojo_pages.extratab:
+  title: 'Extra Tab'
+  description: 'Extra Tab'
+  route_name: dojo_pages.extratab
+  parent: dojo_pages.admin_dojo_pages
+  weight: 6

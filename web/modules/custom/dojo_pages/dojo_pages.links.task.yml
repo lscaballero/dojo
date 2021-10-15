@@ -1,0 +1,5 @@
+dojo_pages.extratab:
+  route_name: dojo_pages.extratab
+  title: Extra tab
+  base_route: system.admin_content
+  weight: 10

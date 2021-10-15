@@ -1,0 +1,6 @@
+dojo_hello.hello:
+  title: Hello Dojo
+  description: 'Hello page menu link'
+  route_name: dojo_hello.hello
+  menu_name: main
+  weight: 1

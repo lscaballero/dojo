@@ -1,0 +1,5 @@
+.toolbar-icon-dojo-pages-admin-dojo:before,
+.toolbar-icon-dojo-pages-admin-dojo:active:before,
+.toolbar-icon-dojo-pages-admin-dojo.is-active:before {
+  background-image: url(images/dojo-icon.svg);
+}

@@ -1,0 +1,5 @@
+dojo_pages.link_action1:
+  route_name: dojo_pages.action1
+  title: 'Add something link 1'
+  appears_on:
+    - dojo_pages.links

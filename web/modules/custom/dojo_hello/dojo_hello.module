@@ -5,3 +5,47 @@
  * Module file for Dojo Hello
  * This module create a static page whit a welcome message
  */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * @param $route_name
+ * @param RouteMatchInterface $route_match
+ * @return string|void
+ */
+function dojo_hello_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match){
+  switch ($route_name){
+    case 'help.page.dojo_hello':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' .t('This module shows how to create a simple page.') . '</p>';
+      return $output;
+
+    case 'dojo_hello.hello':
+      return '<p>' . t('This is a very simple page created by the Forcontu Hello module. ') . '</p>';
+  }
+}
+
+/**
+ * implments hook_install
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function dojo_hello_install(){
+
+  //1. Creación y asignación de una variable de estado
+  \Drupal::state()->set('dojo_hello.test', TRUE);
+
+  //2. Creación de un término de taxonomía
+  $term = \Drupal\taxonomy\Entity\Term::create([
+    'name' => t('Dojo Hello'),
+    'vid' => 'tags',
+  ]);
+  $term->save();
+}
+
+function dojo_hello_uninstall(){
+  \Drupal::state()->delete('dojo_hello.test');
+}
+
+function dojo_hello_requirements($phase){
+
+}
