@@ -813,3 +813,8 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_aUd0GnPEQ0DOtr_WUOrjfsRUUJO-a_OKTBrHWuVBvhEYkFLLvMIJ2mVhsW9ftQUn-FELga7v3g/sync';
+
+// Automatically generated include for settings managed by ddev.
+if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
+  include $app_root . '/' . $site_path . '/settings.ddev.php';
+}

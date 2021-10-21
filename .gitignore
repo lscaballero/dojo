@@ -18,4 +18,11 @@ sites/*/private
 
 #ignore custom
 vendor
+vendor/
+vendor*
+vendor/*
 sites
+web/sites/
+web/sites/default/settings.php
+.ddev/*
+dojo.sql

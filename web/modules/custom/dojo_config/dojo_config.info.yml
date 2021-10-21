@@ -1,0 +1,6 @@
+name: Dojo Config
+description: 'Modulo con ejemplos de configuracion'
+package: dojo
+
+core_version_requirement: ^8.8 ||9.x
+type: module
